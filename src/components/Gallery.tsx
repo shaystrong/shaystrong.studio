@@ -1,8 +1,9 @@
 import { useState } from "react";
 import ArtworkModal from "./ArtworkModal";
-import artwork1 from "@/assets/artwork-1.jpg";
-import artwork2 from "@/assets/artwork-2.jpg";
-import artwork3 from "@/assets/artwork-3.jpg";
+import artwork1 from "@/assets/Shay_Strong_Rain.png";
+import artwork2 from "@/assets/Shay_Strong_Tardigrade.png";
+import artwork3 from "@/assets/Shay_Strong_Stella.png";
+import artwork4 from "@/assets/Shay_Strong_Worm.png";
 
 interface Artwork {
   id: number;
@@ -17,30 +18,39 @@ interface Artwork {
 const artworks: Artwork[] = [
   {
     id: 1,
-    title: "Digital Abstraction #1",
+    title: "Rain",
     image: artwork1,
-    description: "A modern interpretation of geometric forms exploring the relationship between digital and physical space. This piece represents the intersection of technology and human emotion through bold compositional elements.",
+    description: "",
     year: "2024",
-    medium: "Digital Art",
-    dimensions: "800 × 1000 px"
+    medium: "Oil on Canvas",
+    dimensions: ""
   },
   {
     id: 2,
-    title: "Organic Flow",
+    title: "Tardigrade",
     image: artwork2,
-    description: "An expressive piece that captures the fluidity of natural forms through warm earth tones and organic brushwork. The composition invites viewers to explore the tactile quality of traditional media.",
-    year: "2024",
-    medium: "Mixed Media on Canvas",
-    dimensions: "1000 × 800 mm"
+    description: "A tardigrade defending space with lasers.",
+    year: "2023",
+    medium: "Oil on Canvas",
+    dimensions: ""
   },
   {
     id: 3,
-    title: "Urban Narrative",
+    title: "Stella is in a Vortex",
     image: artwork3,
-    description: "A contemporary exploration of street art culture blended with digital techniques. This work examines the dialogue between urban environments and artistic expression in the modern age.",
+    description: "Stella the German Shepherd jumps through a vortex.",
     year: "2024",
-    medium: "Photography & Digital Manipulation",
-    dimensions: "900 × 1200 mm"
+    medium: "Oil on Canvas",
+    dimensions: ""
+  },
+  {
+    id: 4,
+    title: "Worm",
+    image: artwork4,
+    description: "",
+    year: "2023",
+    medium: "Pastel on Paper",
+    dimensions: ""
   }
 ];
 
