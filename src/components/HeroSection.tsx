@@ -6,17 +6,17 @@ const HeroSection = () => {
         <img
           src="/lovable-uploads/f09abcd2-d621-45bb-9eb7-79d5049802e9.png"
           alt=""
-          className="w-96 h-96 opacity-40 transform rotate-12 translate-x-32 translate-y-36"
+          className="w-96 h-96 opacity-40 transform rotate-12 translate-x-32 translate-y-38"
         />
       </div>
       
       {/* Hero Text - Base Layer */}
       <div className="relative z-10 text-center">
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground tracking-wider">
-          SHAY
+          Shay
         </h1>
         <h2 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground tracking-wider">
-          STRONG
+          Strong
         </h2>
       </div>
       
