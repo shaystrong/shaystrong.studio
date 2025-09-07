@@ -6,7 +6,7 @@ const HeroSection = () => {
         <img
           src="/lovable-uploads/f09abcd2-d621-45bb-9eb7-79d5049802e9.png"
           alt=""
-          className="w-96 h-96 opacity-40 transform rotate-12 translate-x-32 translate-y-16"
+          className="w-96 h-96 opacity-40 transform rotate-12 translate-x-32 translate-y-36"
         />
       </div>
       
