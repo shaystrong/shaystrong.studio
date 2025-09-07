@@ -13,14 +13,11 @@ const HeroSection = () => {
       {/* Hero Text - Base Layer */}
       <div className="relative z-10 text-center">
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground tracking-wider">
-          YOUR
+          SHAY
         </h1>
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-light text-muted-foreground tracking-widest mt-2">
-          ARTISTIC
+          STRONG
         </h2>
-        <h3 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground tracking-wider mt-2">
-          PORTFOLIO
-        </h3>
       </div>
       
       
