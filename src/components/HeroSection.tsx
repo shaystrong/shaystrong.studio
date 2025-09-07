@@ -4,18 +4,16 @@ const HeroSection = () => {
       {/* Hero Text - Base Layer */}
       <div className="relative z-10 text-center">
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground tracking-wider">
-          Shay
+          SHAY
         </h1>
         <h2 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground tracking-wider">
-          Strong
+          STRONG
         </h2>
       </div>
       
       
       {/* Creative Director & Artist Labels */}
       <div className="absolute bottom-8 left-8 text-left">
-        <p className="text-lg font-medium text-foreground">+ CREATIVE DIRECTOR</p>
-        <p className="text-lg font-medium text-foreground mt-2">ARTIST</p>
       </div>
     </section>
   );
