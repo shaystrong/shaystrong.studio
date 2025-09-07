@@ -15,7 +15,7 @@ const HeroSection = () => {
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground tracking-wider">
           SHAY
         </h1>
-        <h2 className="text-4xl md:text-6xl lg:text-7xl font-light text-muted-foreground tracking-widest mt-2">
+        <h2 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground tracking-wider">
           STRONG
         </h2>
       </div>
