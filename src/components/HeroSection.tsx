@@ -56,12 +56,12 @@ const HeroSection = () => {
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover object-top"
-        style={{ opacity: 0.35 * opacity, transform: `translateY(${translateY * -1}px)` }}
+        style={{ opacity: 0.65 * opacity, transform: `translateY(${translateY * -1}px)` }}
       />
 
       {/* Stronger gradient/veil for readability */}
       <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background/40"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background/20"
         style={{ opacity }}
       />
 

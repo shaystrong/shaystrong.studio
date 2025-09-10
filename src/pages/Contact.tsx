@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 
-const FORMSPREE_ACTION = "https://formspree.io/f/your-form-id"; // Replace after creating your Formspree form
+const FORMSPREE_ACTION = "https://formspree.io/f/mqadnwzd"; // Formspree endpoint
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
