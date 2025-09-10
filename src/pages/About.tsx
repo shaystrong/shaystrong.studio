@@ -17,7 +17,7 @@ const About = () => {
           <div className="text-base leading-7 text-foreground/90">
             <p>
               Shay is an American artist based in Helsinki, Finland. With a PhD in astrophysics, she pairs her scientific
-              profesion with the analog joy of making art—especially
+              profession with the analog joy of making art—especially
               through the dark Finnish winters. At home, she shares life with a diva cat, a baby dog who is very
               much a mama’s companion, a husband, and two daughters. When she isn’t in the studio or keading teams of 
               engineers, she’s likely open water swimming.
