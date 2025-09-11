@@ -19,7 +19,7 @@ const About = () => {
               Shay is an American artist based in Helsinki, Finland. With a PhD in astrophysics, she pairs her scientific
               profession with the analog joy of making art—especially
               through the dark Finnish winters. At home, she shares life with a diva cat, a baby dog who is very
-              much a mama’s companion, a husband, and two daughters. When she isn’t in the studio or keading teams of 
+              much a mama’s girl, a hunky trophy husband, and two brilliant daughters. When she isn’t in the studio or leading teams of 
               engineers, she’s likely open water swimming.
             </p>
           </div>
