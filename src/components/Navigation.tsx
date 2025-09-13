@@ -14,8 +14,8 @@ const Navigation = () => {
             <Link to="/">HOME</Link>
           </Button>
         )}
-        <Button variant="ghost" className="text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
-          WORK
+        <Button asChild variant="ghost" className="text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+          <Link to="/works">WORK</Link>
         </Button>
         <Button asChild variant="ghost" className="text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
           <Link to="/about">ABOUT</Link>
@@ -72,7 +72,11 @@ const Navigation = () => {
                   </Button>
                 </SheetClose>
               )}
-              <SheetClose asChild><Button variant="ghost" className="justify-start transition-colors hover:bg-primary hover:text-primary-foreground">WORK</Button></SheetClose>
+              <SheetClose asChild>
+                <Button asChild variant="ghost" className="justify-start transition-colors hover:bg-primary hover:text-primary-foreground">
+                  <Link to="/works">WORK</Link>
+                </Button>
+              </SheetClose>
               <SheetClose asChild>
                 <Button asChild variant="ghost" className="justify-start transition-colors hover:bg-primary hover:text-primary-foreground">
                   <Link to="/about">ABOUT</Link>

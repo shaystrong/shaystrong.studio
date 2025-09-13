@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import RainArtwork from "@/assets/Shay_Strong_Rain.png";
+import Logo from "@/assets/ss_logo_blue.png";
 
 const HeroSection = () => {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -65,10 +66,13 @@ const HeroSection = () => {
         style={{ opacity }}
       />
 
-      {/* Hero Text - Base Layer */}
-      <div className="relative z-10 text-center">
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground tracking-wider">SHAY</h1>
-        <h2 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground tracking-wider">STRONG</h2>
+      {/* Hero Logo - Base Layer */}
+      <div className="relative z-10 text-center flex items-center justify-center">
+        <img
+          src={Logo}
+          alt="Shay Strong logo"
+          className="mx-auto w-[70vw] md:w-[55vw] lg:w-[40vw] max-w-[900px] h-auto drop-shadow-md"
+        />
       </div>
 
       {/* Creative Director & Artist Labels */}

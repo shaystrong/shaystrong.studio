@@ -1,58 +1,11 @@
 import { useState } from "react";
 import ArtworkModal from "./ArtworkModal";
-import artwork1 from "@/assets/Shay_Strong_Rain.png";
-import artwork2 from "@/assets/Shay_Strong_Tardigrade.png";
-import artwork3 from "@/assets/Shay_Strong_Stella.png";
-import artwork4 from "@/assets/Shay_Strong_Worm.png";
+import { works as worksData, type WorkItem } from "@/data/works";
 
-interface Artwork {
-  id: number;
-  title: string;
-  image: string;
-  description: string;
-  year: string;
-  medium: string;
-  dimensions: string;
-}
+type Artwork = WorkItem;
 
-const artworks: Artwork[] = [
-  {
-    id: 1,
-    title: "Rain",
-    image: artwork1,
-    description: "",
-    year: "2024",
-    medium: "Oil on Canvas",
-    dimensions: ""
-  },
-  {
-    id: 2,
-    title: "Tardigrade",
-    image: artwork2,
-    description: "A tardigrade defending space with lasers.",
-    year: "2023",
-    medium: "Oil on Canvas",
-    dimensions: ""
-  },
-  {
-    id: 3,
-    title: "Stella is in a Vortex",
-    image: artwork3,
-    description: "Stella the German Shepherd jumps through a vortex.",
-    year: "2024",
-    medium: "Oil on Canvas",
-    dimensions: ""
-  },
-  {
-    id: 4,
-    title: "Worm",
-    image: artwork4,
-    description: "",
-    year: "2023",
-    medium: "Pastel on Paper",
-    dimensions: ""
-  }
-];
+// Use the first few works as "featured" on the homepage gallery.
+const artworks: Artwork[] = worksData.slice(0, 6);
 
 const Gallery = () => {
   const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null);

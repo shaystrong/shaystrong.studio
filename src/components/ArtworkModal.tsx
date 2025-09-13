@@ -1,6 +1,4 @@
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
-import { X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 interface Artwork {
   id: number;
@@ -23,57 +21,26 @@ const ArtworkModal = ({ artwork, isOpen, onClose }: ArtworkModalProps) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-5xl w-full h-[90vh] bg-card p-0 overflow-hidden">
+      <DialogContent className="max-w-5xl w-full max-h-[90vh] bg-card overflow-y-auto">
         <DialogTitle className="sr-only">{artwork.title}</DialogTitle>
         
-        <Button
-          variant="ghost"
-          size="icon"
-          className="absolute top-4 right-4 z-10 text-foreground hover:bg-background/20"
-          onClick={onClose}
-        >
-          <X className="h-6 w-6" />
-        </Button>
-        
-        <div className="flex flex-col lg:flex-row h-full">
+        <div className="flex flex-col lg:flex-row h-full min-h-0">
           {/* Image Section */}
-          <div className="flex-1 relative">
+          <div className="flex-1 relative p-4 md:p-6 flex items-center justify-center min-h-0">
             <img
               src={artwork.image}
               alt={artwork.title}
-              className="w-full h-full object-contain bg-muted"
+              className="w-full h-auto max-h-[60vh] lg:max-h-[80vh] object-contain bg-muted rounded-md"
             />
           </div>
           
           {/* Details Section */}
-          <div className="lg:w-80 p-8 bg-card flex flex-col justify-center">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              {artwork.title}
+          <div className="lg:w-80 p-8 bg-card flex flex-col justify-center flex-shrink-0">
+            <h2 className="text-3xl font-bold text-foreground">
+              {artwork.title} ({artwork.year})
             </h2>
-            
-            <div className="space-y-3 mb-6">
-              <div>
-                <span className="text-sm font-medium text-muted-foreground">Year:</span>
-                <p className="text-foreground">{artwork.year}</p>
-              </div>
-              
-              <div>
-                <span className="text-sm font-medium text-muted-foreground">Medium:</span>
-                <p className="text-foreground">{artwork.medium}</p>
-              </div>
-              
-              <div>
-                <span className="text-sm font-medium text-muted-foreground">Dimensions:</span>
-                <p className="text-foreground">{artwork.dimensions}</p>
-              </div>
-            </div>
-            
-            <div>
-              <span className="text-sm font-medium text-muted-foreground">Description:</span>
-              <p className="text-foreground mt-2 leading-relaxed">
-                {artwork.description}
-              </p>
-            </div>
+            <p className="text-foreground mt-1">{artwork.medium.toLowerCase()}</p>
+            <p className="text-muted-foreground italic mt-1">{artwork.dimensions}</p>
           </div>
         </div>
       </DialogContent>
