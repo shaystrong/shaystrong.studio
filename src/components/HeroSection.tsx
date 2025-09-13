@@ -50,7 +50,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef as React.RefObject<HTMLElement>} className="relative min-h-screen flex items-center justify-center bg-background overflow-hidden">
+    <section ref={sectionRef as React.RefObject<HTMLElement>} className="relative min-h-screen flex items-center justify-center bg-background overflow-visible">
       {/* Background Artwork Layer */}
       <img
         src={RainArtwork}
